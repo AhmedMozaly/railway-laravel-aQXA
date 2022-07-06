@@ -1,1 +1,1 @@
-web: cp .env.example .env && php artisan key:generate && service nginx start
+web: cp .env.example .env && php artisan key:generate && systemctl start nginx
