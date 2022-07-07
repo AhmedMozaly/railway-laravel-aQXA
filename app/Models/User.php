@@ -27,6 +27,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'twitter_token',
+        'twitter_refresh_token',
     ];
 
     /**
@@ -39,6 +41,8 @@ class User extends Authenticatable
         'remember_token',
         'two_factor_recovery_codes',
         'two_factor_secret',
+        'twitter_token',
+        'twitter_refresh_token',
     ];
 
     /**
@@ -48,6 +52,8 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'twitter_token' => 'encrypted',
+        'twitter_refresh_token' => 'encrypted',
     ];
 
     /**
